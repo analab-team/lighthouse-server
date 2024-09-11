@@ -1,0 +1,3 @@
+-r production.txt
+-r codestyle.txt
+streamlit==1.38.0
