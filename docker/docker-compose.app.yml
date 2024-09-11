@@ -1,0 +1,13 @@
+services:
+  lighthouse_server:
+    image: lighthouse_server:dev
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: lighthouse_server
+    ports:
+      - "8090:80/tcp"
+
+
+networks:
+  lighthouse_server:
