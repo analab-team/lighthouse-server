@@ -1,15 +1,15 @@
-# lighthouse-server
+# LightHouse Server
 Main service for LLM Monitoring Service — LightHouse
 
 
-# PROD BUILD
+## PROD BUILD
 1. Создайте файл .env из примера .env.example и заполните его.
 2. Развертывание:
    - Если необходимо поднять вместе с приложением еще и clickhouse: `source docker/deploy.sh up --all`
    - Если только сам сервер: `source docker/deploy.sh up --app`
 
 
-# DEV BUILD
+## DEV BUILD
 1. `conda create -n lighthouse_server python=3.11`
 2. `conda activate lighthouse_server`
 3. `pip install -r requirements/dev.txt`
