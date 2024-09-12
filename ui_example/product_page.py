@@ -8,8 +8,7 @@ import requests
 import streamlit as st
 from pydantic import BaseModel
 
-server = "http://localhost:8090"
-
+from ui_example.config import server
 
 if "authenticated" not in st.session_state:
     st.session_state["authenticated"] = False
