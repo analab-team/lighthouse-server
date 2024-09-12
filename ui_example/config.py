@@ -1,1 +1,3 @@
-server = "http://example.ru:8080"
+import os
+
+server = os.getenv("LIGHTHOUSE_SERVER_HOST")
